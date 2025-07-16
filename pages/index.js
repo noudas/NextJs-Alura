@@ -1,17 +1,5 @@
 import Linki from "../src/components/Link";
 
-function GlobalStyle(){
-  return(
-    <style jsx global>
-      {`
-      body{
-        font-family: sans-serif;
-      }
-      `}
-    </style>
-  )
-}
-
 function Title({children, as}){
   const Tag = as;
   return(
@@ -34,7 +22,6 @@ function Title({children, as}){
 export default function HomePage() {
   return (
     <div>
-      <GlobalStyle/>
       <Title as="h1">Alura Cases - Home</Title>
         <Linki href={'./faq'}>
           FAQ
