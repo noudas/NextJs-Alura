@@ -1,9 +1,9 @@
-import Link from "next/link";
+import NextLink from 'next/link';
 
-export default function Linki({href, children}){
-    return(
-        <Link href={href}>
-            {children}
-        </Link>
+export default function Link({ children, href, ...props}) {
+    return (
+        <NextLink href={href} passHref>
+            <a {...props}>{children}</a>
+        </NextLink>
     );
 }

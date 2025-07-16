@@ -1,12 +1,12 @@
-import Linki from "../src/components/Link";
+import Link from '../src/components/Link';
 
-export default function FaqPage(){
-    return(
+export default function FAQPage() {
+    return (
         <div>
-            <h1>Alura Cases - FAQ</h1>
-            <Linki href="/">
-            Voltar para Home
-            </Linki>
+            <h1>Alura Cases - Páginas de Perguntas FAQ</h1>
+            <Link href="/">
+                Ir para a home
+            </Link>
         </div>
     )
 }

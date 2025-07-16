@@ -1,15 +1,12 @@
-// import App from 'next/app';
-
 import GlobalStyle from '../src/theme/GlobalStyle';
 
-function MyApp({Component, pageProps}){
-
+function MyApp({ Component, pageProps }) {
     return (
         <>
-        <GlobalStyle/>
-        <p>_app é global</p>
-        <Component {...pageProps}/>
+            <GlobalStyle />
+            <Component {...pageProps} />
         </>
-)
+    )
 }
-export default MyApp
+
+export default MyApp;
